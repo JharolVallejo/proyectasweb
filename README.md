@@ -27,6 +27,9 @@
         •	Tener instalado NodeJS
 ## 4.	BACKLOG:
     Para la organización del equipo y del proyecto se realizo la creación de un repositorio en jira donde se puede observar las diferentes tareas de cada sprint.
+![alt text](https://github.com/JharolVallejo/proyectasweb/blob/main/public/img/1.jpeg)    
+![alt text](https://github.com/JharolVallejo/proyectasweb/blob/main/public/img/2.jpeg)
+    
 ## 5.	CONTACTOS: 
     Al necesitar ayuda sobre el aplicativo nos pueden contactar por medio de las redes sociales
 ## 6.	AUTORES:
