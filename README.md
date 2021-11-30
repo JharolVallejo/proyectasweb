@@ -36,4 +36,4 @@
     •	Daniel Steven Martínez 670000275
     •	Jharol Orlando Vallejo 67000268
     •	Richard Steven González 67000839
-    •	Daniel Claudio Gutiérrez 67000_33
+    •	Daniel Claudio Gutiérrez 67000233
