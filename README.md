@@ -1,3 +1,9 @@
+
+<p align="center">
+  <img src="https://github.com/JharolVallejo/proyectasweb/blob/main/public/img/Logotipo%20Negro%20y%20Amarillo%20en%20Negrita.png" />
+</p>
+
+
 ## 1.	DESCRIPCIÓN: 
     M@rket-Shop es un sitio web e-commerce para la compra y venta de productos. El objetivo de proyecto es fortalecer los conocimientos de la carrera para la creación de la misma     utilizando herramientas como frameworks y librerías. Además, las paginas se dividen de la siguiente manera:
         •	Registro: Los usuarios podrán realizar la creación de una cuenta
