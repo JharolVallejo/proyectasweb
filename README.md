@@ -1,4 +1,4 @@
-1.	DESCRIPCIÓN: 
+## 1.	DESCRIPCIÓN: 
     M@rket-Shop es un sitio web e-commerce para la compra y venta de productos. El objetivo de proyecto es fortalecer los conocimientos de la carrera para la creación de la misma     utilizando herramientas como frameworks y librerías. Además, las paginas se dividen de la siguiente manera:
         •	Registro: Los usuarios podrán realizar la creación de una cuenta
         •	Login: Los usuarios podrán ingresar a su cuenta desde y cuando estén registrados
@@ -7,23 +7,23 @@
         •	Pago: Los usuarios podrán seleccionar el modo de pago que desee y deberán ingresar los datos de la tarjeta
         •	Factura: Al realizar el pago se generará una factura
 
-2.	HERRAMIENTAS UTILIZADAS 
+## 2.	HERRAMIENTAS UTILIZADAS 
     •	Fron-end:
     Lenguajes: Html, CSS, JavaScript
     Librería: React
     •	Back-end:
     Lenguaje de programación: Java
     Framework: Springboot
-3.	DESCARGAR DEL APLICATIVO:
+## 3.	DESCARGAR DEL APLICATIVO:
     Para utilizar el aplicativo se deben tener los siguientes requisitos:
         •	Tener instalador el JDK de Java
         •	Tener instalado el IDE de Springboot o utilizar la extensión de Springboot en el IDE de eclipse
         •	Tener instalado NodeJS
-4.	BACKLOG:
+## 4.	BACKLOG:
     Para la organización del equipo y del proyecto se realizo la creación de un repositorio en jira donde se puede observar las diferentes tareas de cada sprint.
-5.	CONTACTOS: 
+## 5.	CONTACTOS: 
     Al necesitar ayuda sobre el aplicativo nos pueden contactar por medio de las redes sociales
-6.	AUTORES:
+## 6.	AUTORES:
     •	Daniel Steven Martínez 670000275
     •	Jharol Orlando Vallejo 67000268
     •	Richard Steven González 67000839
