@@ -14,12 +14,12 @@
         •	Factura: Al realizar el pago se generará una factura
 
 ## 2.	HERRAMIENTAS UTILIZADAS 
-    •	Fron-end:
-    Lenguajes: Html, CSS, JavaScript
-    Librería: React
-    •	Back-end:
-    Lenguaje de programación: Java
-    Framework: Springboot
+    •Fron-end:
+        Lenguajes: Html, CSS, JavaScript
+        Librería: React
+    •Back-end:
+        Lenguaje de programación: Java
+        Framework: Springboot
 ## 3.	DESCARGAR DEL APLICATIVO:
     Para utilizar el aplicativo se deben tener los siguientes requisitos:
         •	Tener instalador el JDK de Java
