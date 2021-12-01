@@ -15,7 +15,7 @@ export const CardComments = ({ planets }) => {
   console.log(planets);
   return (
     <Fragment>
-      <div className="card mx-3 my-1 bg-light col-md-5 mb-4">
+      <div className="card mx-5 my-3  bg-light">
         <div className="card-body row">
           <div className="col-md-6">
             <h2 className="card-title text-center py-4">{name}</h2>
