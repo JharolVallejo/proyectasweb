@@ -17,17 +17,18 @@ export const Header = () => {
                       <img  className="log-jk" src="/img/Logotipo Negro y Amarillo en Negrita.png" alt="" />
                     </NavLink>
                   </div>
-                  <div className="row-shear">
-                    <div className="row-shear-2">
+                  <div className="row-shear-2">
+                    
+                   
                       <input className="input-header" type="text" name="buscar"></input>
                       <input className="btn btn3" type="submit" value="Buscar"></input>
-                    </div>
+                   
                   </div>
                   <div className="log-header1" align="center">
                     <div>
-                      <div>
+                      {/* <div>
                         <img className="log-carro" src="/img/carro_compras.png" alt="" />
-                      </div>
+                      </div> */}
                       <div>
                           <NavLink
                             activeClassName="active"
