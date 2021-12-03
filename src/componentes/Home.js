@@ -6,7 +6,7 @@ import { CardProduct } from "./UI/CardProduct";
 export const Products = () => {
   const [product, setProduct] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [actual, setActual] = useState(`http://localhost:3001/listaproducto`);
+  const [actual, setActual] = useState(`http://localhost:9090/Producto/BuscarProducto`);
 
   const fetchProduct = async (page) => {
     return fetch(page);

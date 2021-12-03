@@ -23,7 +23,7 @@ export const ProductScreen = () => {
     try {
       const getProduct = async () => {
         const res = await fetch(
-          `http://localhost:3001/listaproducto?productonombre=${productonombre}`
+          `http://localhost:9090/Producto/filter/${productonombre}`
         );
         const data = await res.json();
         setProduct(data[0]);
@@ -31,7 +31,7 @@ export const ProductScreen = () => {
       };
       const getProductComments = async (product) => {
         const res = await fetch(
-          `http://localhost:3001/listacomentarios?idproducto=${product.idproducto}`
+          `http://localhost:9090/comentarios/${product.idproducto}`
         );
         const data = await res.json();
         console.log("data", data);
