@@ -30,12 +30,16 @@ export const ProductScreen = () => {
         getProductComments(data[0]);
       };
       const getProductComments = async (product) => {
-        const res = await fetch(
-          `http://localhost:9090/comentarios/${product.idproducto}`
-        );
-        const data = await res.json();
-        console.log("data", data);
-        setComments(data);
+        try {
+          const res = await fetch(
+            `http://localhost:9090/comentarios/${product.idproducto}`
+          );
+          const data = await res.json();
+          console.log("data", data);
+          setComments(data);
+        } catch (error) {
+          console.error(error);
+        }
       };
       getProduct();
     } catch (error) {}
