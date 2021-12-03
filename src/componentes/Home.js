@@ -7,7 +7,7 @@ export const Products = () => {
   const [product, setProduct] = useState([]);
   const [loading, setLoading] = useState(false);
   const [actual, setActual] = useState(
-    `http://localhost:9090/Producto/BuscarProducto`
+    `http://localhost:3000/Producto/BuscarProducto`
   );
 
   const fetchProduct = async (page) => {
@@ -21,8 +21,9 @@ export const Products = () => {
         })
         .then((data) => {
           setLoading(true);
-          setProduct(data);
-        });
+          console.log(data);
+          setProduct(data.listaproducto);
+        }).catch(error=>{console.error(error)});
     } catch (error) {
       console.error(error);
     }
@@ -31,7 +32,7 @@ export const Products = () => {
   return (
     <div className="container-fluid body_info">
       <div className="box">
-        {loading ? (
+        {product ? (
           product.map((product) => {
             return <CardProduct product={product} key={product.url} />;
           })

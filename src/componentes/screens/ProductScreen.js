@@ -23,20 +23,21 @@ export const ProductScreen = () => {
     try {
       const getProduct = async () => {
         const res = await fetch(
-          `http://localhost:9090/Producto/filter/${productonombre}`
+          `http://localhost:3000/Producto/filter/${productonombre}`
         );
         const data = await res.json();
-        setProduct(data[0]);
-        getProductComments(data[0]);
+        console.log(data);
+        setProduct(data.listaproducto[0]);
+        getProductComments(data.listaproducto[0]);
       };
       const getProductComments = async (product) => {
         try {
           const res = await fetch(
-            `http://localhost:9090/comentarios/${product.idproducto}`
+            `http://localhost:3000/comentarios/${product.idproducto}`
           );
           const data = await res.json();
           console.log("data", data);
-          setComments(data);
+          setComments(data.listacomentarios);
         } catch (error) {
           console.error(error);
         }
@@ -165,8 +166,8 @@ export const ProductScreen = () => {
               </article>
 
               <h2>Comentarios</h2>
-              {comments.map((comment) => (
-                <CardComments comment={comment} />
+              {comments.map((comment,i) => (
+                <CardComments key={i} comment={comment} />
               ))}
               {/* <div>
               <label>Comenta:</label>
