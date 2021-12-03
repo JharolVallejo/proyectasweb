@@ -154,6 +154,99 @@ export const ProductScreen = () => {
 
 
       </div>
+      {/* <div className="container screens container-screens bordered rounded mt-4  animate__animated  animate__fadeIn">
+        <div className="row">
+          <h1 className="text-center pt-5">{name}</h1>
+        </div>
+        <div className="row">
+          <div className="col-md-6 mt-5 ">
+            <h5 className="text-center pb-3 screem">
+              <span>Altura:</span> {height}
+            </h5>
+
+            <h5 className="text-center pb-3 screem">
+              <span>Año de Cumpleaños:</span> {birth_year}
+            </h5>
+            <h5 className="text-center pb-3 screem">
+              <span>Color de cabello:</span> {hair_color}
+            </h5>
+            <h5 className="text-center pb-3 screem">
+              <span>Tono de piel:</span> {skin_color}
+            </h5>
+            <h5 className="text-center pb-3 screem">
+              <span>Color de ojos:</span> {eye_color}
+            </h5>
+
+            <h5 className="text-center pb-3 screem">
+              <span>Genero:</span> {gender}
+            </h5>
+            <h5 className="text-center pb-3 screem">
+              <span>Masa:</span> {mass}
+            </h5>
+          </div>
+
+
+                    </article>
+                  </main>
+                </div>
+              </div>
+            </article>
+            <article className="card mt-5">
+              <div className="card-body">
+                <div className="row">
+                 
+
+                  <div className="col-md-12 ">
+                    <h5>Descripción</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                      consequat.
+                    </p>
+                  </div>
+                </div>
+                <hr />
+
+              </div>
+            </article>
+
+            <h2>Comentarios</h2>
+            {/* <div>
+              <label>Comenta:</label>
+              <div>
+                <form onSubmit={(e) => {
+                  e.preventDefault();
+                  saveComment()
+                }}>
+                  <input type={'text'} onChange={(e) => {
+                    setComment(e.target.value)
+                  }} />
+                  <button type={"submit"}>Enviar
+                  </button>
+                </form>
+              </div>
+              <br />
+            </div>
+
+            {
+              post && post.map(post => <div key={post.id}>
+                {post.username}
+
+                {post.message}
+              </div>)
+            }
+
+          // </div> */}
+          </div>
+
+        </section>
+
+
+
+
+
+      </div>
       {/* <div class="factura">
       <div class="panel-body">
                     <div class="table-responsive">
@@ -209,7 +302,16 @@ export const ProductScreen = () => {
                 </div>
               </div> */}
     
-      
+     
+          <button
+            className="justify-content-center py-2 mb-3 "
+            onClick={handleReturn}
+          >
+            Pagar
+          </button>
+        </div>
+      </div> */}
+
       <Comments />
     </Fragment>
   );
