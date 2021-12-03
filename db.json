@@ -1,0 +1,67 @@
+{
+  "listaproducto": [
+    {
+      "idproducto": 1,
+      "productonombre": "zapatillas",
+      "descripcion": "zapatos melos",
+      "marca": "adidas",
+      "idusuario": 1,
+      "valor": 30000,
+      "imagen": null,
+      "cantidad": 1
+    },
+    {
+      "idproducto": 2,
+      "productonombre": "pantalones",
+      "descripcion": "pantalones melos",
+      "marca": "adidas",
+      "idusuario": 2,
+      "valor": 50000,
+      "imagen": "fffff",
+      "cantidad": 2
+    },
+    {
+      "idproducto": 3,
+      "productonombre": "tacones",
+      "descripcion": "tacones melos",
+      "marca": "jordan",
+      "idusuario": 1,
+      "valor": 500000,
+      "imagen": "fffffsdas",
+      "cantidad": 3
+    },
+    {
+      "idproducto": 4,
+      "productonombre": "calcetas",
+      "descripcion": "calcetas melos",
+      "marca": "adi",
+      "idusuario": 1,
+      "valor": 50000,
+      "imagen": "fffffsddf",
+      "cantidad": 1
+    }
+  ],
+  "listacomentarios": [
+    {
+      "idcomentario": 2,
+      "comentario": "excelente ",
+      "idusuario": 2,
+      "idproducto": 1,
+      "fechacomentario": "2021-11-30T05:00:00.000+00:00"
+    },
+    {
+      "idcomentario": 2,
+      "comentario": "excelente ",
+      "idusuario": 2,
+      "idproducto": 2,
+      "fechacomentario": "2021-11-30T05:00:00.000+00:00"
+    },
+    {
+      "idcomentario": 2,
+      "comentario": "excelente ",
+      "idusuario": 2,
+      "idproducto": 3,
+      "fechacomentario": "2021-11-30T05:00:00.000+00:00"
+    }
+  ]
+}
