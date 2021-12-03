@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router";
+import { Link, NavLink } from "react-router-dom";
 
 export const Login = () => {
   const [username, setUsername] = useState("");
@@ -38,6 +39,14 @@ export const Login = () => {
 
                   <div class="text-center pt-1 mb-5 pb-1">
                     <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Iniciar sesión</button>
+                    <div>
+                          <NavLink
+                            activeClassName="active"
+                            className="nav-item nav-link login"
+                            exact
+                            to="/Register"
+                          >Regístrate</NavLink>
+                      </div>
                   </div>
 
                   {/* <div class="d-flex align-items-center justify-content-center pb-4">

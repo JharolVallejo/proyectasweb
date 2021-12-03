@@ -154,81 +154,62 @@ export const ProductScreen = () => {
 
 
       </div>
-      {/* <div className="container screens container-screens bordered rounded mt-4  animate__animated  animate__fadeIn">
-        <div className="row">
-          <h1 className="text-center pt-5">{name}</h1>
-        </div>
-        <div className="row">
-          <div className="col-md-6 mt-5 ">
-            <h5 className="text-center pb-3 screem">
-              <span>Altura:</span> {height}
-            </h5>
-
-            <h5 className="text-center pb-3 screem">
-              <span>Año de Cumpleaños:</span> {birth_year}
-            </h5>
-            <h5 className="text-center pb-3 screem">
-              <span>Color de cabello:</span> {hair_color}
-            </h5>
-            <h5 className="text-center pb-3 screem">
-              <span>Tono de piel:</span> {skin_color}
-            </h5>
-            <h5 className="text-center pb-3 screem">
-              <span>Color de ojos:</span> {eye_color}
-            </h5>
-
-            <h5 className="text-center pb-3 screem">
-              <span>Genero:</span> {gender}
-            </h5>
-            <h5 className="text-center pb-3 screem">
-              <span>Masa:</span> {mass}
-            </h5>
-          </div>
-
-          <div className="col-md-6">
-            <h2 className="text-center pb-3">Description:</h2>
-            <p className=" text-center mb-5 me-md-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              viverra nibh quis ligula semper tempor. Nulla quis turpis quis
-              diam sodales iaculis. Duis id luctus mi. Praesent sollicitudin
-              pretium elit quis bibendum. Nullam ut nunc ipsum. Pellentesque non
-              pharetra est. Quisque eu eros vel lorem tristique sodales. Aenean
-              velit sapien, tempus et quam in, ultrices sollicitudin tellus.
-              Vivamus vehicula porttitor lacus suscipit fringilla. Maecenas
-              lacinia orci ac felis dictum mattis. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Praesent viverra nibh quis ligula
-              semper tempor. Nulla quis turpis quis diam sodales iaculis. Duis
-              id luctus mi. Praesent sollicitudin pretium elit quis bibendum.
-              Nullam ut nunc ipsum. Pellentesque non pharetra est. Quisque eu
-              eros vel lorem tristique sodales. Aenean velit sapien, tempus et
-              quam in, ultrices sollicitudin tellus. Vivamus vehicula porttitor
-              lacus suscipit fringilla. Maecenas lacinia orci ac felis dictum
-              mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent viverra nibh quis ligula semper tempor. Nulla quis turpis
-              quis diam sodales iaculis. Duis id luctus mi. Praesent
-              sollicitudin pretium elit quis bibendum. Nullam ut nunc ipsum.
-              Pellentesque non pharetra est. Quisque eu eros vel lorem tristique
-              sodales. Aenean velit sapien, tempus et quam in, ultrices
-              sollicitudin tellus. Vivamus vehicula porttitor lacus suscipit
-              fringilla. Maecenas lacinia orci ac felis dictum mattis. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              viverra nibh quis ligula semper tempor. Nulla quis turpis quis
-              diam sodales iaculis. Duis id luctus mi. Praesent sollicitudin
-              pretium elit quis bibendum. Nullam ut nunc ipsum. Pellentesque non
-              pharetra est. Quisque eu eros vel lorem tristique sodales. Aenean
-              velit sapien, tempus et quam in, ultrices sollicitudin tellus.
-              Vivamus vehicula porttitor lacus suscipit fringilla. Maecenas
-              lacinia orci ac felis dictum mattis.
-            </p>
-          </div>
-          <button
-            className="justify-content-center py-2 mb-3 "
-            onClick={handleReturn}
-          >
-            Pagar
-          </button>
-        </div>
-      </div> */}
+      {/* <div class="factura">
+      <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-condensed">
+                            <thead>
+                                <tr>
+                                    <td><strong>Item Name</strong></td>
+                                    <td class="text-center"><strong>Item Price</strong></td>
+                                    <td class="text-center"><strong>Item Quantity</strong></td>
+                                    <td class="text-right"><strong>Total</strong></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Samsung Galaxy S5</td>
+                                    <td class="text-center">$900</td>
+                                    <td class="text-center">1</td>
+                                    <td class="text-right">$900</td>
+                                </tr>
+                                <tr>
+                                    <td>Samsung Galaxy S5 Extra Battery</td>
+                                    <td class="text-center">$30.00</td>
+                                    <td class="text-center">1</td>
+                                    <td class="text-right">$30.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Screen protector</td>
+                                    <td class="text-center">$7</td>
+                                    <td class="text-center">4</td>
+                                    <td class="text-right">$28</td>
+                                </tr>
+                                <tr>
+                                    <td class="highrow"></td>
+                                    <td class="highrow"></td>
+                                    <td class="highrow text-center"><strong>Subtotal</strong></td>
+                                    <td class="highrow text-right">$958.00</td>
+                                </tr>
+                                <tr>
+                                    <td class="emptyrow"></td>
+                                    <td class="emptyrow"></td>
+                                    <td class="emptyrow text-center"><strong>Shipping</strong></td>
+                                    <td class="emptyrow text-right">$20</td>
+                                </tr>
+                                <tr>
+                                    <td class="emptyrow"><i class="fa fa-barcode iconbig"></i></td>
+                                    <td class="emptyrow"></td>
+                                    <td class="emptyrow text-center"><strong>Total</strong></td>
+                                    <td class="emptyrow text-right">$978.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+              </div> */}
+    
+      
       <Comments />
     </Fragment>
   );
