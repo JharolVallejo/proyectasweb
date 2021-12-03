@@ -122,7 +122,7 @@
 
 
 /* NUEVO CSS */
-@charset "UTF-8";
+/* @charset "UTF-8"; */
 /* ==== BASE STYLES ====*/
 /* ==================== GLOBAL STYLES ======================= */
 
@@ -879,7 +879,7 @@ article:after,
   
   /*# sourceMappingURL=responsive.css.map */
 
-  @charset "UTF-8";
+  /* @charset "UTF-8"; */
 /* ========================
 Bootstrap with custom variables
 =================== */

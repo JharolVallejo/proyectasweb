@@ -238,15 +238,15 @@ export const ProductScreen = () => {
             }
 
           // </div> */}
-          </div>
+        
 
-        </section>
-
-
+      
 
 
 
-      </div>
+
+
+    
       {/* <div class="factura">
       <div class="panel-body">
                     <div class="table-responsive">
@@ -310,9 +310,9 @@ export const ProductScreen = () => {
             Pagar
           </button>
         </div>
-      </div> */}
+      </div>}
 
-      <Comments />
+      <Comments/>
     </Fragment>
   );
 };
