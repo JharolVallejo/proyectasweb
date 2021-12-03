@@ -79,12 +79,7 @@ export const Register = () => {
           placeholder='password'
           onChange={(e) => setPassword(e.target.value)}
           value={password} />
-                    <label class="form-label" for="form2Example11">Confirmar Contraseña </label>
-
-<input type="password" id="form2Example22" class="form-control"   type='password'
-placeholder='password'
-onChange={(e) => setPassword(e.target.value)}
-value={password} />
+ 
             
                     
                   </div>
