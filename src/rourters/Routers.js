@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -12,18 +12,40 @@ import { Register } from "../componentes/Register";
 import { ProductScreen } from "../componentes/screens/ProductScreen";
 import { Login } from "../componentes/vistas/login";
 
+export const UserContext = React.createContext();
+
 export const Routers = () => {
+  const [productos, setProductos] = useState([]);
+  const [busquedaRealizada, setBusquedaRealizada] = useState(false);
+
+  const buscarProducto = async (producto) => {
+    setBusquedaRealizada(true)
+    try {
+      const res = await fetch(
+        `http://localhost:3000/Producto/filter/${producto}`
+      );
+      const data = await res.json();
+      setProductos(data.listaproducto)
+    } catch (error) {}
+    // setProductos(e)
+  };
   return (
-    <Router>
-      <Header />
-      <Switch>
-        <Route exact path="/" component={Products} />
-        <Route exact path="/Login" component={Login} />
-        <Route exact path="/Register" component={Register} />
-        <Route exact path="/producto/:productonombre" component={ProductScreen} />
-        <Redirect to="/" component={Products} />
-      </Switch>
-      <Footer />
-    </Router>
+    <UserContext.Provider value={{ productos, busquedaRealizada }}>
+      <Router>
+        <Header buscarProducto={buscarProducto} />
+        <Switch>
+          <Route exact path="/" component={Products} />
+          <Route exact path="/Login" component={Login} />
+          <Route exact path="/Register" component={Register} />
+          <Route
+            exact
+            path="/producto/:productonombre"
+            component={ProductScreen}
+          />
+          <Redirect to="/" component={Products} />
+        </Switch>
+        <Footer />
+      </Router>
+    </UserContext.Provider>
   );
 };
