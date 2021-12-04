@@ -17,6 +17,9 @@ export const Register = () => {
     try {
       await fetch("http://localhost:3000/Usuario/AgregarUsuario", {
         method: "POST",
+        headers:{
+          'Content-Type': 'application/json'
+        },
         body: JSON.stringify(data),
       });
       history.push("/");
