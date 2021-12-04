@@ -11,7 +11,7 @@
         •	Creación de producto: Los usuarios podrán crear productor para venderlos
         •	Productos: Los usuarios podrán ver todos los productos del sitio web y además podrán filtrar los productos
         •	Pago: Los usuarios podrán seleccionar el modo de pago que desee y deberán ingresar los datos de la tarjeta
-        •	Factura: Al realizar el pago se generará una factura
+        •	Factura: Al realizar el pago se generará una factura.
 
 ## 2.	HERRAMIENTAS UTILIZADAS 
     •Fron-end:
