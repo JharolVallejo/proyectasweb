@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import * as ReactBootStrap from "react-bootstrap";
 import { CardProduct } from "./UI/CardProduct";
+import { UserContext } from "../rourters/Routers";
 
 // import { act } from "react-dom/test-utils";
 export const Products = () => {
+  const productosBuscados = useContext(UserContext);
   const [product, setProduct] = useState([]);
   const [loading, setLoading] = useState(false);
   const [actual, setActual] = useState(
@@ -15,15 +17,25 @@ export const Products = () => {
   };
   useEffect(() => {
     try {
-      fetchProduct(actual)
-        .then((response) => {
-          return response.json();
-        })
-        .then((data) => {
-          setLoading(true);
-          console.log(data);
-          setProduct(data.listaproducto);
-        }).catch(error=>{console.error(error)});
+      const query = () => {
+        fetchProduct(actual)
+          .then((response) => {
+            return response.json();
+          })
+          .then((data) => {
+            setLoading(true);
+            console.log(data);
+            setProduct(data.listaproducto);
+          })
+          .catch((error) => {
+            console.error(error);
+          });
+      };
+      if (!productosBuscados.busquedaRealizada) {
+        query();
+      } else {
+        setProduct(productosBuscados.productos)
+      }
     } catch (error) {
       console.error(error);
     }

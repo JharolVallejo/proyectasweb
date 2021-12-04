@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import Logo from "../assets/img/Logotipo Negro y Amarillo en Negrita.png"
 
-export const Header = () => {
+export const Header = ({ buscarProducto }) => {
+  const [productoBusqueda, setProductoBusqueda] = useState("");
   return (
     <header>
       <div className="container-fluid-md">
@@ -16,14 +18,24 @@ export const Header = () => {
               >
                 <img
                   className="log-jk"
-                  src="/img/Logotipo Negro y Amarillo en Negrita.png"
+                  src={Logo}
                   alt=""
                 />
               </NavLink>
             </div>
             <div className="row-shear-2">
-              <input className="input-header" type="text" name="buscar"></input>
-              <input className="btn btn3" type="submit" value="Buscar"></input>
+              <input
+                className="input-header"
+                type="text"
+                name="buscar"
+                onChange={(e) => setProductoBusqueda(e.target.value)}
+              ></input>
+              <input
+                className="btn btn3"
+                type="submit"
+                value="Buscar"
+                onClick={(e) => buscarProducto(productoBusqueda)}
+              ></input>
             </div>
             <div className="log-header1" align="center">
               <div>
