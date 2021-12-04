@@ -1,11 +1,9 @@
 import React, { useEffect, useState, useContext } from "react";
 import * as ReactBootStrap from "react-bootstrap";
 import { CardProduct } from "./UI/CardProduct";
-import { UserContext } from "../rourters/Routers";
 
 // import { act } from "react-dom/test-utils";
 export const Products = () => {
-  const productosBuscados = useContext(UserContext);
   const [product, setProduct] = useState([]);
   const [loading, setLoading] = useState(false);
   const [actual, setActual] = useState(
@@ -30,11 +28,12 @@ export const Products = () => {
           .catch((error) => {
             console.error(error);
           });
+          localStorage.removeItem("productoBusqueda")
       };
-      if (!productosBuscados.busquedaRealizada) {
-        query();
+      if (JSON.parse(localStorage.getItem("productoBusqueda"))) {
+        setProduct(JSON.parse(localStorage.getItem("productoBusqueda")))
       } else {
-        setProduct(productosBuscados.productos)
+        query();
       }
     } catch (error) {
       console.error(error);
